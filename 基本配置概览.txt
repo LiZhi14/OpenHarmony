@@ -1,0 +1,12 @@
+  *基础实验环境要求和工具：
+                1.Windows 10 专业版
+                2.Visual Studio Code
+                3.鸿蒙系统linux编译环境
+	4.HiBurn.exe
+	5.Hi3861IOT板卡驱动程序
+	6.MobaXterm.rar（利用wondows访问linux系统终端）
+  *开发环境配置：
+	1.VM workstation 16.0或更高
+	2.Ubuntu镜像文件，官网下载ubuntu-20.04.4-desktop-amd64
+	3.安装虚拟机                      // 网络一定要配置好。
+	

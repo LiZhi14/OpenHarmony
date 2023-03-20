@@ -1,0 +1,38 @@
+linux中环境配置
+
+打开终端：
+	sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup   //备份Ubuntu源地址
+	sudo vim /etc/apt/sources.list    //删除源地址
+关闭终端：
+	打开https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/   在此网站下载对应Ubuntu版本的软件镜像
+打开终端：
+	sudo vim /etc/apt/sources.list    //全部换成刚才复制的软件镜像
+	sudo apt-get update     //更新软件源
+	sudo apt-get install yum  //安装yum
+	sudo apt-get install python3.8  //自带的版本有点低，建议更新
+	sudo apt-get install gcc && sudo apt-get install g++ && sudo apt-get install make && sudo apt-get install zlib* && sudo apt-get install libffi-dev
+	//环境依赖，编译工具等
+	sudo apt-get install python3-setuptools python3-pip  //注：此步骤会发生冲突，导致图形界面丢失，不过终端环境在
+	sudo pip3 install pycryptodome  -i https://pypi.tuna.tsinghua.edu.cn/simple
+	sudo pip3 install six --upgrade --i gnore-installed six  -i https://pypi.tuna.tsinghua.edu.cn/simple
+	sudo pip3 install ecdsa  -i https://pypi.tuna.tsinghua.edu.cn/simple
+	sudo apt-get install scons
+	wget https://repo.huaweicloud.com/harmonyos/compiler/gn/1523/linux/gn.1523.tar
+	wget https://repo.huaweicloud.com/harmonyos/compiler/ninja/1.9.0/linux/ninja.1.9.0.tar
+	wget https://repo.huaweicloud.com/harmonyos/compiler/gcc_riscv32/7.3.0/linux/gcc_riscv32-linux-7.3.0.tar.gz
+	tar -xvf gcc_riscv32-linux-7.3.0.tar.gz -C ~/
+	// 以上为Linux中环境搭建
+
+windows中环境配置
+打开Moba（为MobaXterm的简写，以下同）
+	先将鸿蒙的内核源码资源包code-1.0.tar.gz上传到/home/user目录下（笔者@LiZhi并未提供，此源码包已开源）
+	创建目录并且解压该资源包（该目录下为代码撰写处）
+	cd ~
+	sudo chmod -R 0777 hmcode   //设置开发权限
+
+ 打开VScode 
+	安装ssh远程组件，C/C++组件  //用于访问位于终端的鸿蒙开发环境，因为鸿蒙是基于linux内核
+	连接linux主机，并打开内核源码资源包找到  /app  
+
+//环境搭建完毕
+

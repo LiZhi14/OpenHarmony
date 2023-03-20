@@ -1,0 +1,7 @@
+1.在终端执行
+	sudo  apt  install   net-tools     //安装网络环境
+	sudo  apt  install  ssh    //安装ssh远程组件
+	sudo  apt  install  vim   //安装编辑工具
+网络配置好且ssh远程访问正常
+2.使用终端工具MobaXterm打开，连接Ubuntu系统。（由ssh完成）
+虚拟机配置结束。
